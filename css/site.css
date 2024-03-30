@@ -16,3 +16,57 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+.feedback {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.button {
+    margin-top: 50px;
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: red;
+    border: none;
+    box-shadow: 0 9px #999;
+    border-radius: 50%;
+}
+
+.button:hover {background-color: darkred}
+
+.button:active {
+    background-color: darkred;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.pic {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    border-radius: 50%;
+    width: 200px;
+}

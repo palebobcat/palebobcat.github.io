@@ -2,13 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Nederlands Internet</title>
   <script src="js/password.js"></script>
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-<div class="center">
-  <table>
+<script src="js/confetti.js"></script>
+<script>
+  const start = () => {
+    setTimeout(function() {
+      confetti.start()
+    }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+  };
+
+  //  for stopping the confetti 
+
+  const stop = () => {
+    setTimeout(function() {
+      confetti.stop()
+    }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+  };
+  // after this here we are calling both the function so it works
+  //start();
+  stop();
+</script>
+<div>
+  <div class="pic">
+    <img src="css/geertje.jpg" alt=""/>
+  </div>
+  <table class="center">
     <tr>
       <td>
         <label for="password"></label><input type="password" id="password" value=""/>
@@ -18,6 +40,14 @@
       </td>
     </tr>
   </table>
+  <div id="incorrect" class="feedback" style="display: none">
+    <h1 style="color:red">Wachtwoord is fout!</h1>
+  </div>
+  <div id="correct" class="feedback" style="display: none">
+    <h1 style="color:limegreen">Welkom op de Interwebs</h1>
+    <button class="button" onclick="start()">Aan</button>
+  </div>
+  
 </div>
 
 </body>

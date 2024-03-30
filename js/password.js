@@ -1,8 +1,13 @@
 function checkPassword() {
     var input = document.getElementById('password').value;
+    var x = document.getElementById("incorrect");
+    var y = document.getElementById("correct");
+
     if (input !== "password123") {
-        alert("WRONG PASSWORD DUMBASS!!!!");
+        x.style.display = "inline-block";
+        y.style.display = "none";
     } else {
-        alert(input);
+        x.style.display = "none";
+        y.style.display = "inline-block";
     }
 }
