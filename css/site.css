@@ -1,7 +1,7 @@
 body {
     margin-bottom: 60px;
     padding: 0;
-    background: url("NL.jpg") no-repeat center center fixed;
+    background: url("css/NL.jpg") no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
